@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useExpense } from '../context/ExpenseContext';
 import { CURRENCIES } from '../utils/formatters';
 import {
-  Wallet,
   LayoutDashboard,
   Receipt,
   Repeat,
@@ -24,7 +23,8 @@ import {
   SlidersHorizontal,
   MoreVertical,
   Camera,
-  Calculator
+  Calculator,
+  IndianRupee
 } from 'lucide-react';
 
 export type ActiveTab = 'dashboard' | 'transactions' | 'subscriptions' | 'budgets' | 'calendar' | 'accounts' | 'analytics';
@@ -89,7 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               onClick={() => setActiveTab('dashboard')}
             >
               <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/25 ring-2 ring-indigo-500/20">
-                <Wallet size={20} />
+                <IndianRupee size={21} className="stroke-[2.5]" />
               </div>
               <div>
                 <span className="text-lg font-extrabold tracking-tight bg-gradient-to-r from-indigo-600 via-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">

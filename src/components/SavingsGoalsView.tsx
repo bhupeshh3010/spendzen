@@ -8,7 +8,7 @@ import {
   PiggyBank,
   Calendar,
   CheckCircle2,
-  DollarSign,
+  IndianRupee,
   Edit2,
   Trash2,
   X,
@@ -318,7 +318,7 @@ export const SavingsGoalsView: React.FC = () => {
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl max-w-sm w-full p-6 space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                <DollarSign size={18} className="text-emerald-600" />
+                <IndianRupee size={18} className="text-emerald-600" />
                 Add Funds to Goal
               </h3>
               <button
